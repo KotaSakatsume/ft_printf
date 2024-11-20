@@ -6,12 +6,12 @@
 /*   By: kosakats <kosakats@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 16:29:32 by kosakats          #+#    #+#             */
-/*   Updated: 2024/11/20 07:25:37 by kosakats         ###   ########.fr       */
+/*   Updated: 2024/11/20 12:30:42 by kosakats         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
 #include "libft/libft.h"
-#include "libftprintf.h"
 
 int	ft_puthex_fd(unsigned int n, int fd, char x)
 {

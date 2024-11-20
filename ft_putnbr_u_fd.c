@@ -6,12 +6,12 @@
 /*   By: kosakats <kosakats@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 16:30:13 by kosakats          #+#    #+#             */
-/*   Updated: 2024/11/20 07:25:42 by kosakats         ###   ########.fr       */
+/*   Updated: 2024/11/20 12:30:43 by kosakats         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
 #include "libft/libft.h"
-#include "libftprintf.h"
 
 int	ft_putnbr_u_fd(unsigned int n, int fd)
 {
