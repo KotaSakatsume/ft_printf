@@ -6,12 +6,12 @@
 #    By: kosakats <kosakats@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/13 22:36:28 by kosakats          #+#    #+#              #
-#    Updated: 2024/11/20 14:40:54 by kosakats         ###   ########.fr        #
+#    Updated: 2024/11/22 22:44:04 by kosakats         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	libftprintf.a
-SRCS		=	$(wildcard libft/*.c) ft_printf.c ft_putptr_fd.c ft_putnbr_u_fd.c ft_puthex_fd.c
+SRCS		=	libft/ft_putchar_fd.c libft/ft_putstr_fd.c libft/ft_putnbr_fd.c  ft_printf.c ft_putptr_fd.c ft_putnbr_u_fd.c ft_puthex_fd.c
 INCLUDES	= 	-I./includes
 OBJS		=    $(SRCS:.c=.o)
 CC			=    cc

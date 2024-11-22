@@ -6,12 +6,13 @@
 /*   By: kosakats <kosakats@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 22:36:59 by kosakats          #+#    #+#             */
-/*   Updated: 2024/11/20 18:58:26 by kosakats         ###   ########.fr       */
+/*   Updated: 2024/11/22 22:03:21 by kosakats         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft/libft.h"
+#include <stdio.h>
 
 static int	handle_format(const char fmt, va_list args)
 {
@@ -53,18 +54,22 @@ int	ft_printf(const char *str, ...)
 	return (count);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	printf("ft_print\n");
-	ft_printf(" %p %p\n ", (void *)LONG_MIN, (void *)LONG_MAX);
-	ft_printf(" %p %p\n ", ULONG_MAX, -ULONG_MAX);
-	printf("print\n");
-	printf(" %p %p\n ", (void *)LONG_MIN, (void *)LONG_MAX);
-	printf(" %p %p\n ", (void *)ULONG_MAX, (void *)(-ULONG_MAX));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("ft_print\n");
+// 	ft_printf(" NULL %s NULL\n ", NULL);
+// 	// ft_printf(" %p %p\n ", 0, 0);
+// 	// ft_printf(" %p %p\n ", (void *)LONG_MIN, (void *)LONG_MAX);
+// 	// ft_printf(" %p %p\n ", ULONG_MAX, -ULONG_MAX);
+// 	printf("print\n");
+// 	printf(" NULL %s NULL\n ", (char *)NULL);
+// 	// printf(" %p %p\n ", (void *)0, (void *)0);
+// 	// printf(" %p %p\n ", (void *)LONG_MIN, (void *)LONG_MAX);
+// 	// printf(" %p %p\n ", (void *)ULONG_MAX, (void *)(-ULONG_MAX));
+// 	return (0);
+// }
 
 // int	main(void)
 // {
@@ -73,15 +78,15 @@ int	main(void)
 // 	// 	str = "ft_printf test!";
 // 	// 	num = 123456;
 // 	// 	// Basic Tests
-// 	// ft_printf(" NULL %s NULL\n ", (char *)NULL);
+// 	ft_printf(" NULL %s NULL\n ", (char *)NULL);
 // 	ft_printf(" %p %p\n ", (void *)LONG_MIN, (void *)LONG_MAX);
 // 	ft_printf(" %p %p\n ", ULONG_MAX, -ULONG_MAX);
-// 	// ft_printf(" %p %p\n ", 0, 0);
+// 	ft_printf(" %p %p\n ", 0, 0);
 // 	printf("----------------------------------------------------\n");
-// 	// printf(" NULL %s NULL\n ", (char *)NULL);
+// 	printf(" NULL %s NULL\n ", (char *)NULL);
 // 	printf(" %p %p\n ", (void *)LONG_MIN, (void *)LONG_MAX);
 // 	printf(" %p %p\n ", (void *)ULONG_MAX, (void *)(-ULONG_MAX));
-// 	// printf(" %p %p\n ", (void *)0, (void *)0);
+// 	printf(" %p %p\n ", (void *)0, (void *)0);
 // 	// 	ft_printf("Test 5: Unsigned: %u\n", 42);
 // 	// 	ft_printf("Test 6: Hexadecimal lowercase: %x\n", 255);
 // 	// 	ft_printf("Test 7: Hexadecimal uppercase: %X\n", 255);

@@ -6,14 +6,14 @@
 /*   By: kosakats <kosakats@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 16:29:32 by kosakats          #+#    #+#             */
-/*   Updated: 2024/11/20 12:30:42 by kosakats         ###   ########.fr       */
+/*   Updated: 2024/11/22 20:56:04 by kosakats         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft/libft.h"
 
-int	ft_puthex_fd(unsigned int n, int fd, char x)
+int	ft_puthex_fd(unsigned long n, int fd, char x)
 {
 	int		count;
 	char	*hex;
